@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+@import "tailwindcss";
+@tailwind utilities;
+@tailwind components;
+@tailwind base;
+* {
+  font-family: Outfit;
+}
+
+.active hr {
+  @apply block;
+}
+
+/* Hide hr by default */
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+@media (max-width: 740px) {
+  .active p {
+    @apply text-white bg-blue-500;
+  }
+}
